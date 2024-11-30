@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.freepik.com/free-vector/abstract-background-design-dark-green_53876-59276.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    margin-top: 20px;
+}
+
+.education-item, .certification-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.education-item img, .certification-item img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.certifications {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.navigate {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.navigate a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.navigate a:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.certifications img {
+    width: 50%;
+    border-radius: 8px;
+    transition: all 150ms ease-in-out;
+}
+
+.certifications img:hover {
+    transform: scale(2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .navigate {
+        flex-direction: row;
+        align-items: flex-start;
+        top: 70px;
+        right: 20px;
+        margin-top: 20px;
+    }
+
+    .navigate a {
+        padding: 0.5em;
+        font-size: 18px;
+    }
+
+    .education-item, .certification-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-item img, .certification-item img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigate {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 100px auto;
+        padding: 10px;
+    }
+
+    .education-item img, .certification-item img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        border-bottom: 1px solid #0073e6;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigate {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        margin: 50px auto;
+        padding: 5px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .certifications img {
+        width: 80%;
+    }
+}

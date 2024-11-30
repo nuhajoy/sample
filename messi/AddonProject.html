@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalibela Town</title>
+    <button class="random">
+        Change Theme
+    </button>
+</head>
+<style>
+    body{
+     background: linear-gradient(104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(160, 112, 161) 101.7%);
+      
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    
+    }
+    img{
+        height: 130px;
+        margin: 0 auto;
+        display: block;
+        width: 600px;
+    }
+    .free{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+        
+    }
+    p{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .done{
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        font-size: 24;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: white;
+        transition: all 150ms ease-in-out;
+    }
+    .done:hover{
+        background: plum;
+        cursor: pointer;
+    }
+    footer{
+        text-align: center;
+        font-size: 20px;
+        margin:10px 0;
+    }
+    .random{
+        text-align: center;
+        display: block;
+        margin:20px auto;
+        font-size: 13px;
+        background: black;
+        color: white;
+        padding: 12px;
+        border-radius: 5px;
+        border-color: plum;
+    }
+    .random:hover{
+        background: white;
+        color: black;
+    }
+    .intro_pic{
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        height: 350px;
+    }
+     .intro_pic:hover{
+        filter: contrast(50%);
+        transform: scale(1.1);
+
+    }
+    .grid{
+        margin: 15px 0px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:15px;
+    }
+    .grid img{
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+    }
+    .grid img:hover{
+        transform: scale(2);
+
+    }
+    .dark{
+        background: black;
+        color: white;
+    }
+    .dark .free{
+        background:#2a2438;
+
+
+    }
+    .dark a{
+        color:plum;
+    }
+
+</style>
+<body >
+    <div class="free">
+    <h1>🤖 What is Machine Learning ?</h1>
+    <h2>My favorite field of AI</h2>
+    
+    
+    <img src="C:\Users\Hello\Downloads\machines\machine-learning-pillar-page-overview.jpeg" alt=""
+    class="intro_pic" > <br>
+    <div class="grid">
+    <img src="C:\Users\Hello\Downloads\machines\premium_photo-1682124651258-410b25fa9dc0.jpg" alt="">
+    <img src="C:\Users\Hello\Downloads\machines\0_PVdHybB6Vvj3jleY.webp" alt="">
+    <img src="C:\Users\Hello\Downloads\machines\robot_humanoid_using_tablet_computer_big_data_analytic_1_94eab7101e.jpg" alt="">
+    <img src="C:\Users\Hello\Downloads\machines\ai-generated-8540915_1280.webp" alt="">
+
+    </div>
+    
+    <p> <strong>Machine</strong> learning is a field of study in artificial intelligence concerned with the development 
+        and study of statistical algorithms that can learn from data and generalize to unseen data, 
+        and thus perform tasks without explicit instructions. 
+    </p>
+         <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank"> 📖 Read on Wikipedia</a><br>
+    <button class="done">
+        Learn Machine_learning
+    </button>
+    </div>
+    <footer>
+        Coded By Nuhamin Emnebered
+    </footer>
+    <script>
+        function changetheme(){
+            let body=document.querySelector("body");
+            if(body.classList.contains("dark")){
+                body.classList.remove("dark");
+            }
+            else{
+                body.classList.add("dark");
+            }
+
+            }
+            
+        let random=document.querySelector(".random");
+        random.addEventListener("click",changetheme)
+        function learn_MA(){
+            let name=prompt("What is your name?");
+            let email=prompt("What is your email?");
+            alert("Thanks, "+name+", We will be in touch.");
+        }
+        let button=document.querySelector(".done");
+        button.addEventListener("click",learn_MA);
+    </script>
+</body>
+</html>

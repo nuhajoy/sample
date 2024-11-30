@@ -1,0 +1,209 @@
+body{
+  color: white;
+  background-image: url(https://img.freepik.com/premium-photo/education-concept-with-books_1225540-1577.jpg?semt=ais_hybrid);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about{
+    display: flex;
+    border:  2px solid;
+    border-radius:60px;
+    border-color:lightblue;
+    margin-right: 500px;
+    margin-left: 90px;
+    margin-top: 60px;
+    background-color: rgba(255,255,255,0.6);
+}
+.abouth{
+    display: flex;
+    border:  2px solid;
+    border-radius:60px;
+    border-color:lightblue;
+    margin-right: 500px;
+    margin-left: 90px;
+    margin-top: 60px;
+    background-color: rgba(255,255,255,0.6);
+}
+.about img{
+    width: 300px;
+    height: 500px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+}
+.about p{
+    color: black;
+    font-size: 18px;
+}
+.aboutme{
+    margin-right: 100px;
+    margin-left: 60px;
+}
+.acadamic{
+    display: flex;
+    border:  2px solid;
+    border-radius:60px;
+    background-color: lightblue;
+    border-color: lightblue;
+    margin-right: 90px;
+    margin-left: 500px; 
+    margin-top: 90px;
+}
+.acadamic img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 10px; 
+}
+.back{
+    margin-right: 100px;
+    margin-left: 60px;
+}
+
+
+
+.abouth img{
+    width: 300px;
+    height: 40%;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+     
+     
+}
+.abouth video{
+     width: 300px;
+    height: 50%;
+    margin-top:10px;
+     
+}
+.abouthme{
+    margin-right: 100px;
+    margin-left: 60px;
+}
+.future{
+    display: flex;
+    border:  2px solid;
+    border-radius:60px;
+    background-color:  lightblue;
+    border-color: lightblue;
+    margin-right: 90px;
+    margin-left: 500px; 
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.future img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 10px; 
+}
+.aspire{
+    margin-right: 100px;
+    margin-left: 60px;
+}
+figcaption{
+    color: purple;
+    font-size: 18px;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+  list-style-type: none;
+}
+ul a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+ul a:hover {
+  background-color: #555;
+}
+h3{
+    font-size: 25px;
+    color: blue;
+}
+p{
+    font-size: 18px;
+    color: black;
+}
+article{
+  font-size: 18px;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: white;
+  color: black;
+}
+
+
+@media (max-width: 1200px) {
+    .about, .abouth, .acadamic, .future {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about img, .abouth img, .acadamic img, .future img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .about, .abouth, .acadamic, .future {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: row;
+        align-items: flex-start;
+        top: 5px;
+        right: 20px;
+        list-style-type: none;
+    }
+    
+    ul a {
+        padding: 0.5em;
+        font-size: 18px;
+    }
+    
+    .about, .abouth, .acadamic, .future {
+        margin: 10px 5px;
+    }
+    
+    .about img, .abouth img, .acadamic img, .future img {
+        max-width: 200px;
+    }
+    
+    .about p, .abouthme, .aspire, .back {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        font-size: 16px;
+    }
+    
+    .about img, .abouth img, .acadamic img, .future img {
+        max-width: 380px;
+    }
+    
+    .about p, .abouthme, .aspire, .back {
+        font-size: 14px;
+    }
+}
+
+
+       

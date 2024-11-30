@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <style>
+        .free{
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        body{
+            background-image: linear-gradient(to bottom,#06c7a0 0%,#72a 100%);
+            color: #fff;
+            width: 50%;
+            margin: 60px auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .random{
+            color: rgb(115, 255, 0);
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #c9f4c9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 20px;
+            margin: 20px,0,10px;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            background:burlywood;
+            color: white;
+            font-size: 40px;
+            padding: 30px,40px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+            cursor: pointer;
+            transition:all 200ms ease;
+            
+
+        }
+        button:hover{
+            color: #72a;
+            background: white;
+            
+        }
+        
+
+        
+
+    </style>
+    <h1>
+        I love Doro Wet
+    </h1>
+    <h2>
+        Especially Ethiopian Doro wet
+    </h2>
+    <hr>
+    <img src="https://bcegg.com/wp-content/uploads/2023/06/Doro-Wat-banner-1-TW-FB-2400x1440.jpg"alt="Doro wot"
+    class="free">
+    <hr>
+    <div>
+         <p>
+        <strong>Doro wet</strong> is a richly spiced, fragrant, and delicious chicken-and-egg stew from Ethiopia and Eritrea.
+        Doro wot literally means “chicken stew.” The word doro stands for chicken, and wot means stew.
+        The chicken cooks in a flavour-rich base of slow-cooked onions, berbere, niter kibbeh (spiced clarified butter), ginger, and garlic. 
+        Hard-boiled eggs go in towards the end for a protein-rich and delightfully low-cost meal fit to feed a small army. <br>
+      <a class="random"
+       href="https://www.diversivore.com/doro-wat/">Read on Wikipedia
+        
+      </a> 
+    </p>
+    </div>
+    <button >
+        Try Ethiopian Doro wet
+    </button> 
+    <script>
+        function done(){
+            let name=prompt("what is your name?");
+            if(name.length>0){
+                alert("Thanks, "+name+", We will be in touch. Meanwhile, have a lot of Doro wet!");
+            }else{
+               alert("No name ,no Ethiopian Doro wet for you!");
+            }
+    
+        }
+         let trybutton=document.querySelector("button");
+         trybutton.addEventListener("click",done);
+        
+    </script>
+
+    
+</body>
+</html>
